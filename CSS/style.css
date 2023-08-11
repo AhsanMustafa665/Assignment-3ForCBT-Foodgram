@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +8,13 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Frank Ruhl Libre", serif;
+  overflow-x: hidden;
+}
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
 }
 .navbar-text a:hover {
   color: whitesmoke;
@@ -54,4 +60,33 @@ button {
 }
 .food-img {
   height: 160px;
+}
+.mySwiperProjects .swiper-pagination-bullet {
+  background-color: #da715e;
+  width: 15px;
+  height: 15px;
+}
+.review-img {
+  border: 1px solid #da715e;
+}
+.pizza {
+  background-image: url("/Photos/mask-image.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.pizza img {
+  margin-left: 10rem;
+  border: 20px solid white;
+  border-radius: 300px;
+}
+.arrow-left {
+  border: 1px solid #da715e;
+  color: #da715e;
+}
+.arrow-right {
+  background-color: #da715e;
+  color: white;
+}
+.quote {
+  color: #e2b4ac;
 }
