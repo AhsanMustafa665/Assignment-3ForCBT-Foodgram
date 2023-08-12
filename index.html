@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Foodgram</title>
     <!-- bootstrap css link -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
@@ -26,6 +26,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
+    <link rel="shortcut icon" href="/Photos/icon.png" type="image/x-icon" />
   </head>
   <!-- Navbar here -->
   <header class="banner-bg">
@@ -49,16 +50,16 @@
               <a class="nav-link" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-0 mx-md-4" href="#">Packages</a>
+              <a class="nav-link mx-0 mx-md-4" href="#packages">Packages</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Review</a>
+              <a class="nav-link" href="#review">Review</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-0 mx-md-4" href="#">About Us</a>
+              <a class="nav-link mx-0 mx-md-4" href="#about">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
+              <a class="nav-link" href="#contact">Contact Us</a>
             </li>
             <li class="nav-item">
               <a
@@ -72,7 +73,7 @@
       </div>
     </nav>
     <div
-      class="w-50 h-75 text-center mx-auto d-lg-flex flex-column justify-content-lg-center align-items-lg-center banner-content"
+      class="w-100 h-75 text-center mx-auto d-flex flex-column justify-content-lg-center align-items-lg-center banner-content"
     >
       <h1 class="fw-bold">
         People who love to eat are always the best people.
@@ -85,7 +86,7 @@
         <button class="px-3 py-2 rounded-pill border-0 primary-btn">
           Explore our menu
         </button>
-        <i class="fa-solid fa-star ml-4"></i>
+        <i class="fa-solid fa-star ms-5"></i>
         <i class="fa-solid fa-star"></i>
         <i class="fa-solid fa-star"></i>
         <i class="fa-solid fa-star"></i>
@@ -105,17 +106,71 @@
         alt=""
       />
     </div>
-    <div class="d-flex justify-content-around align-items-center mx-auto w-50">
-      <h4 class="fw-bold">Our food means</h4>
+    <div
+      class="d-block d-md-flex justify-content-center align-items-center mx-auto text-center"
+    >
+      <h4 class="fw-bold m-lg-5">Our food means</h4>
       <small
         >Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br />
         Eos voluptas, inventore indore and velit debitis at nam!</small
       >
     </div>
+    <div class="swiper mySwiperProjects d-block d-md-none">
+      <div class="swiper-wrapper">
+        <div
+          class="swiper-slide flex flex-col border border-gray-700 p-3 border-0 shadow-lg mb-5 container w-100 mt-5 rounded-5"
+        >
+          <img class="w-50" src="./Photos/menu-1.png" alt="" />
+          <h4 class="my-3">Mutton biryani recipe</h4>
+          <div class="d-flex align-items-start justify-content-around pb-4">
+            <p>$8.00</p>
+            <button class="px-3 py-1 rounded-pill border-0 primary-btn">
+              Order Now
+            </button>
+          </div>
+        </div>
+        <div
+          class="swiper-slide flex flex-col border border-gray-700 p-3 border-0 shadow-lg mb-5 container w-100 mt-5 rounded-5"
+        >
+          <img class="w-50" src="./Photos/menu-2.png" alt="" />
+          <h4 class="my-3">Chicken roast recipe</h4>
+          <div class="d-flex align-items-start justify-content-around pb-4">
+            <p>$8.00</p>
+            <button class="px-3 rounded-pill border-0 primary-btn">
+              Order Now
+            </button>
+          </div>
+        </div>
+        <div
+          class="swiper-slide flex flex-col border border-gray-700 p-3 border-0 shadow-lg mb-5 container w-100 mt-5 rounded-5"
+        >
+          <img class="w-50" src="./Photos/menu-3.png" alt="" />
+          <h4 class="my-3">Great pasta</h4>
+          <div class="d-flex align-items-start justify-content-around pb-4">
+            <p>$8.00</p>
+            <button class="px-3 py-1 rounded-pill border-0 primary-btn">
+              Order Now
+            </button>
+          </div>
+        </div>
+        <div
+          class="swiper-slide flex flex-col border border-gray-700 p-3 border-0 shadow-lg mb-5 container w-100 mt-5 rounded-5"
+        >
+          <img class="w-50" src="./Photos/menu-4.png" alt="" />
+          <h4 class="my-3">Barbecue chicken fried</h4>
+          <div class="d-flex align-items-start justify-content-around pb-4">
+            <p>$8.00</p>
+            <button class="px-3 py-1 rounded-pill border-0 primary-btn">
+              Order Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Food category -->
-    <section class="py-5">
+    <section id="packages" class="py-5">
       <div
-        class="swiper mySwiperProjects"
+        class="swiper mySwiperProjects d-none d-md-block"
         pagination="true"
         pagination-dynamic-bullets="true"
       >
@@ -136,11 +191,11 @@
           </div>
           <div class="swiper-slide rounded-5 shadow-lg py-4 w-25">
             <img
-              class="w-75 food-img mx-auto px-2"
+              class="w-50 food-img mx-auto px-2"
               src="./Photos/menu-2.png"
               alt=""
             />
-            <h6 class="fw-semibold py-3">Mutton biryani recipe</h6>
+            <h6 class="fw-semibold py-3">Chicken roast recipe</h6>
             <div class="d-flex align-items-start justify-content-around pb-4">
               <p>$8.00</p>
               <button class="px-3 py-1 rounded-pill border-0 primary-btn">
@@ -154,7 +209,7 @@
               src="./Photos/menu-3.png"
               alt=""
             />
-            <h6 class="fw-semibold py-3">Mutton biryani recipe</h6>
+            <h6 class="fw-semibold py-3">Great pasta</h6>
             <div class="d-flex align-items-start justify-content-around pb-4">
               <p>$8.00</p>
               <button class="px-3 py-1 rounded-pill border-0 primary-btn">
@@ -168,7 +223,7 @@
               src="./Photos/menu-4.png"
               alt=""
             />
-            <h6 class="fw-semibold py-3">Mutton biryani recipe</h6>
+            <h6 class="fw-semibold py-3">Barbecue chicken fried</h6>
             <div class="d-flex align-items-start justify-content-around pb-4">
               <p>$8.00</p>
               <button class="px-3 py-1 rounded-pill border-0 primary-btn">
@@ -236,17 +291,17 @@
         <div class="swiper-pagination"></div>
       </div>
     </section>
-    <section class="mt-5">
+    <section class="mt-5" id="about">
       <div class="row">
-        <div class="col-md-6 pizza">
+        <div class="col-md-6 pizza d-none d-md-block">
           <img
             style="background-color: white"
-            class="w-75"
+            class="w-75 d"
             src="/Photos/pizza.png"
             alt=""
           />
         </div>
-        <div class="col-md-5 mt-5 ms-5">
+        <div class="col-md-5 mt-5 ms-2 ms-md-5">
           <h3 class="fw-bold mt-4">
             Part of the secret of success is to eat what you like and the food
             fight it out inside
@@ -347,8 +402,9 @@
           Explore our Menu
         </button>
       </div>
-      <section>
-        <h3 class="text-center fw-semibold py-5">
+      <!-- review section -->
+      <section id="review">
+        <h3 class="text-center fw-semibold py-5 d-none d-md-block">
           <i class="fa-solid fa-quote-left me-5 quote"></i>
           Who our popular customers are saying
           <i class="fa-solid fa-quote-right ms-5 quote"></i>
@@ -373,10 +429,12 @@
               adipisci neque officiis libero deleniti tenetur error, aut rerum,
               quibusdam quae? Ipsa.
             </p>
-            <i class="fa-solid fa-star ml-4"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
+            <div class="review-icon">
+              <i class="fa-solid fa-star ml-4"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
           </swiper-slide>
           <swiper-slide>
             <div class="d-flex justify-content-center align-items-center pb-4">
@@ -428,13 +486,66 @@
             <i class="fa-solid fa-star"></i>
           </swiper-slide>
         </swiper-container>
-        <div class="d-flex justify-content-center mt-4">
+        <div class="d-flex justify-content-center mt-4 pb-5">
           <i
             class="fa-solid fa-arrow-left p-2 rounded-circle me-3 arrow-left"
           ></i>
           <i class="fa-solid fa-arrow-right p-2 rounded-circle arrow-right"></i>
         </div>
       </section>
+      <!-- footer -->
+      <footer id="contact" class="container mt-5 pb-1">
+        <div class="row">
+          <div class="col-md-4 border-end">
+            <h5>Foodgram</h5>
+            <small
+              >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
+              necessitatibus eligendi molestias exercitationem excepturi
+              officiis laborum, nam veniam quis asperiores! Commodi eos quas
+              mollitia .</small
+            ><br />
+            <div class="text-white my-4">
+              <i class="fa-brands fa-facebook rounded-circle fs-5 p-1 icon"></i>
+              <i
+                class="fa-brands fa-twitter rounded-circle fs-5 p-1 mx-2 icon"
+              ></i>
+              <i
+                class="fa-brands fa-instagram rounded-circle fs-5 p-1 icon"
+              ></i>
+            </div>
+          </div>
+          <div class="col-md-5 border-end">
+            <h5>Quick links</h5>
+            <a class="text-decoration-none text-black" href="">Home</a><br />
+            <a class="text-decoration-none text-black" href="">Packages</a
+            ><br />
+            <a class="text-decoration-none text-black" href="">Review</a><br />
+            <a class="text-decoration-none text-black" href="">About Us</a
+            ><br />
+            <a class="text-decoration-none text-black" href="">Contact Us</a>
+          </div>
+          <div class="col-md-3">
+            <h5>Contact Us</h5>
+            <div class="d-flex">
+              <i class="fa-solid fa-phone me-2 icon"></i>
+              <p>+8801310075966</p>
+            </div>
+            <div class="d-flex">
+              <i class="fa-solid fa-envelope me-2 icon"></i>
+              <p>ahsanfaisal665@gmail.com</p>
+            </div>
+            <div class="d-flex">
+              <i class="fa-solid fa-location-dot me-2 icon"></i>
+              <p>Boalkhali, Bangladesh</p>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <p class="text-center">
+          © Copyright 2023. Foodgram Co. All right reserved by |
+          <span style="color: #da715e">Mostafa</span>
+        </p>
+      </footer>
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -451,13 +562,16 @@
             el: ".swiper-pagination",
             clickable: true,
             dynamicBullets: true,
-            renderBullet: function (index, className) {
-              return (
-                '<span class="' + className + '">' + (index + 1) + "</span>"
-              );
-            },
           },
           breakpoints: {
+            375: {
+              slidesPerView: 1,
+              spaceBetween: 5,
+            },
+            411: {
+              slidesPerView: 1,
+              spaceBetween: 30,
+            },
             640: {
               slidesPerView: 2,
               spaceBetween: 20,
@@ -467,7 +581,7 @@
               spaceBetween: 40,
             },
             1024: {
-              slidesPerView: 4,
+              slidesPerView: 5,
               spaceBetween: 50,
             },
           },

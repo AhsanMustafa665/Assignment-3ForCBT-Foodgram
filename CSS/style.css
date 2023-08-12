@@ -11,11 +11,7 @@ body {
   font-family: "Frank Ruhl Libre", serif;
   overflow-x: hidden;
 }
-swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-}
+
 .navbar-text a:hover {
   color: whitesmoke;
 }
@@ -35,10 +31,10 @@ button {
 .primary-btn {
   background-color: #da715e;
 }
-.fa-star {
+.fa-star,
+.icon {
   color: #da715e;
 }
-
 .swiper-slide {
   text-align: center;
   font-size: 14px;
@@ -66,7 +62,10 @@ button {
   width: 15px;
   height: 15px;
 }
-.review-img {
+.review-img,
+.fa-twitter,
+.fa-instagram,
+.fa-facebook {
   border: 1px solid #da715e;
 }
 .pizza {
@@ -90,3 +89,22 @@ button {
 .quote {
   color: #e2b4ac;
 }
+/* // Small devices (landscape phones, 576px and above till next break point) */
+@media (min-width: 411px) {
+  .pizza img {
+    /* display: none; */
+  }
+  .review-icon {
+    display: none;
+  }
+  .mySwiper {
+    text-align: center;
+    width: 100%;
+  }
+}
+/* 
+// Medium devices (tablets, 768px and above till next break point)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and above till next break point)
+@media (min-width: 992px) { ... } */
